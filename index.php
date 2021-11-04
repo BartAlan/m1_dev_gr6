@@ -118,32 +118,6 @@
 
 </section>
 
-
-	<div style="width: 100%; height: 100px"></div><!-- Marge. -->
-
-<section class="informations-entite marge">
-	<section class="informations-entite__informations">
-		<h2>Pizzamerican</h2>
-		<ul class="note note-4">
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<i class="fas fa-star"></i>
-			<span class="note-avis">(42 avis)</span>
-		</ul>
-		<p>Venez déguster d'excellentes pizzas chez Pizzamerican. Notre terrasse vous garantie un moment tranquille en famille ou entre amis. Nous proposons plus de 20 variétés de pizzas à la carte !</p>
-		<p>Une boisson vous est offerte pour toute commande de pizza.</p>
-		<p>Profitez d'une réduction pour votre première commande !</p>
-	</section>
-	<section class="informations-entite__image">
-		<figure>
-			<img src="img/pizza.jpg" alt="Pizzas avec savoir faire artisanal" />
-		</figure>
-	</section>
-</section>
-
-
 	<div style="width: 100%; height: 100px"></div><!-- Marge. -->
 
 
