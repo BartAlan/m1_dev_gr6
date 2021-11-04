@@ -66,7 +66,7 @@
 	<section class="exigence">
 		<div class="card-exigence">
 				<div class="case-exigence__case1">
-					<a href="index.html">
+					<a href="menu.php">
 						<img src="img/halal.jpg" alt="Nourriture Halal">
 						<div class="product">
 							<a class="card-exigence__btn" href="menu.php">
@@ -78,7 +78,7 @@
 					</a> 
 				</div>
 				<div class="case-exigence__case2">
-				<a href="index.html">
+				<a href="menu.php">
 						<img src="img/vegan.jpg" alt="Nourriture Vegan">
 						<div class="product">
 							<a class="card-exigence__btn" href="menu.php">
@@ -90,7 +90,7 @@
 					</a> 
 				</div>
 				<div class="case-exigence__case3">
-					<a href="index.html">
+					<a href="menu.php">
 						<img src="img/sansglutten.jpg" alt="Nourriture sans gluten">
 						<div class="product">
 							<a class="card-exigence__btn" href="menu.php">
@@ -102,7 +102,7 @@
 					</a> 
 				</div>
 				<div class="case-exigence__case4">
-					<a href="index.html">
+					<a href="menu.php">
 						<img src="img/vegan.jpg" alt="Nourriture Vegan">
 						<div class="product">
 							<a class="card-exigence__btn" href="menu.php">
