@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #00ccbc;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    background-color: #00ccbc;
+
+}
+
+.marge {
+    padding: 0 12vw;
+}
+
+.container, .container > * {
+    margin: 2rem 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .row:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.row:nth-child(odd) .clipPath {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+/* Navigation */
+
+.header {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+#nav-color {
+    background-color: var(--main-color);
+}
+
+.border {
+    border-radius: 5px;
+}
+
+nav > * {
+    margin: 0 18px;
+}
+
+.ctn-logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.ctn-logo img {
+    height: 100%;
+    margin-right: 1em;
+}
+
+.logo-title {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.logo-color {
+    color: var(--main-color);
+}
+
+.nav__form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#input__search {
+    position: relative;
+    flex: 1;
+    background-color: #F1F1F1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding-left: 44px !important;
+    width: 80%;
+    height: 100%;
+}
+
+#input__search:focus {
+    outline: none;
+    box-shadow: inset 0 2px 4px rgb(0 0 0 / 5%), 0 0 0 3px rgb(0 204 188 / 30%);
+    border: 2px solid #00ccbc;
+}
+
+form label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#input__search, form img {
+    font-size: 1em;
+    padding: 12px;
+}
+
+form img {
+    width: auto;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.nav-list a, .nav-list button {
+    background-color: #fff;
+    padding: 8px 14px;
+    margin: 0 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #e8ebeb;
+}
+
+.nav-list i {
+    margin-right: 1vw;
+    color: #00ccbc;
+}
+
+/* Navigation-Toggle */
+
+#menu-show, #menu-close {
+    cursor: pointer;
+}
+
+#nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+
+    /* Pour alléger le JS */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-toggle__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-toggle__header img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-toggle__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.nav-toggle__list {
+    margin: 1vw 0;
+}
+
+.nav-toggle__list > *{
+    margin: 1vw 0;
+}
+
+.btn-full {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 12px;
+    color: white;
+    text-align: center;
+}
+
+#cart::before,
+#store::before,
+#faq::before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 1vw;
+}
+
+#cart::before {
+    content: "\f291";
+}
+
+#store::before {
+    content: "\f54e";
+}
+
+#faq::before {
+    content: "\f059";
+}
+
+
+/* Promo */
+
+.promo::before {
+    content: '-50%';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    transform: rotateZ(-15deg);
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background-color: red;
+}
+
+.note {
+    display: flex;
+    flex-direction: row;
+}
+
+.note i {
+    color: hsl(0, 0%, 60%, 100%);
+    width: 20px;
+    height: auto;
+    margin-right: 1px;
+    stroke-width: 2px;
+}
+
+.note-1 i:nth-child(-n+1),
+.note-2 i:nth-child(-n+2),
+.note-3 i:nth-child(-n+3),
+.note-4 i:nth-child(-n+4),
+.note-5 i:nth-child(-n+5) {
+    color: yellow;
+}
+
+.note-avis {
+    font-size: 1em;
+}
+
+
+/* Clip-path */
+
+#renseignement .row {
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 20%);
+}
+
+.clipPath {
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+    height: 15rem;
+    margin: 0;
+}
+
+.clipPath img {
+    width: 100%;
+}
+
+.row__article {
+    line-height: 1.5;
+}
+
+.row__article {
+    flex: 1;
+    align-self: center;
+}
+
+.row__info {
+    padding: 1em;
+}
+
+
+
+/* Footer */
+
+footer {
+  padding: 8vw 12vw;
+  padding-bottom: 2vw;
+  color: #f0f9ff;
+  background-color: #2e3333;
+}
+
+footer h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer ul {
+  padding: 0;
+  line-height: 2;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+footer li {
+    position: relative;
+    width: fit-content;
+}
+
+footer li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover::after {
+    transform: scaleX(1);
+}
+
+footer ul img {
+    width: 200px;
+    margin: 5px;
+}
+
+footer a {
+    color: inherit;
+}
+
+.ctn-social {
+    display: flex;
+    justify-content: center;
+}
+
+.ctn-social a {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 50%;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid currentColor;
+}
+
+.ctn-social a:hover {
+    transform: translateY(-3px);
+}
+
+.ctn-social i {
+    font-size: 18px;
+
+}
+
+#download {
+    width: 100%;
+    text-align: center;
+}
+
+#download .row {
+    justify-content: center;
+    gap: 0px;
+}
+
+.copyright {
+    text-align: right;
+}
+
+
+/* CSS ADDED */
+
+.restaurant-menu {
+  background-color: #F1F1F1;
+}
+
+.restaurant-menu__formulecontenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    width: 75%;
+}
+
+.restaurant-menu__formulecontenu li {
+    background-color: white;
+    padding: 10px;
+}
+
+.article__img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.article__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-menu__formulecontenu .row__article {
+    background-color: white;
+}
+
+.row__figure {
+    background-color: white !important;
+    align-self: stretch;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+
+    .marge {
+        padding: 0 6vw;
+    }
+
+    .logo-title {
+        display: none;
+    }
+
+    .nav__form {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #login1 {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column !important;
+    }
+
+    .container .row {
+        gap: 0;
+    }
+    
+    .row__article {
+        background-color: #F1F1F1;
+    }
+
+    .row__info {
+        padding-top: 0;
+    }
+
+    .row__article button {
+        display: block;
+        margin: auto;
+    }
+
+    .clipPath {
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%) !important;
+    }
+
+    .restaurant-menu__formulecontenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informations-entite__image {
+        display: none !important;
+    }
+
+}

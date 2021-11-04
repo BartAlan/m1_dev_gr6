@@ -1,0 +1,497 @@
+.type-nourriture__liste {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.type-nourriture__liste > li {
+  background-color: #f9fafa;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 16px;
+  margin-top: 16px;
+  font-family: stratos, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, "微软雅黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e3333;
+  text-decoration: none;
+}
+
+.type-nourriture__liste a {
+  font-family: stratos, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, "微软雅黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e3333;
+  text-decoration: none;
+}
+
+.menu {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px 8px;
+  grid-template-areas: "case1 case2 case3 case4 case5" "case6 case7 case8 case9 case10";
+  
+}
+
+.menu img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu h3 {
+  margin: 0;
+}
+
+.menu h3 + p {
+  padding: 4px 0;
+  color: #00d006;
+}
+
+.menu p {
+  margin: 0;
+  padding: 4px 0;
+}
+
+.menu .product {
+  padding: 0 16px;
+}
+
+.menu ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li:first-of-type {
+  font-weight: bold;
+}
+
+.menu .time {
+  display: inline-flex;
+  border-radius: 16px;
+  padding: 0px 16px;
+  text-align: center;
+  float: right;
+  transform: translate(0, -35px);
+  background-color: white;
+  margin-right: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.case1 {
+  grid-area: case1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case2 {
+  grid-area: case2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case3 {
+  grid-area: case3;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case4 {
+  grid-area: case4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case5 {
+  grid-area: case5;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case6 {
+  grid-area: case6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case7 {
+  grid-area: case7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case8 {
+  grid-area: case8;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case9 {
+  grid-area: case9;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.case10 {
+  grid-area: case10;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: lightgray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.menu_promotions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "menu__caseTools menu__caseTools case3 case4 case5" "menu__caseTools menu__caseTools case8 case9 case10";
+  margin-bottom: 20px;
+}
+
+.menu_promotions .menu {
+  display: contents;
+}
+
+.case3 {
+  grid-area: case3;
+  position: relative;
+}
+
+.case4 {
+  grid-area: case4;
+  position: relative;
+}
+
+.case5 {
+  grid-area: case5;
+  position: relative;
+}
+
+.case8 {
+  grid-area: case8;
+  position: relative;
+}
+
+.case9 {
+  grid-area: case9;
+  position: relative;
+}
+
+.case10 {
+  grid-area: case10;
+  position: relative;
+}
+
+.menu__caseTools {
+  grid-area: menu__caseTools;
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+.textgrey a {
+  color: gray;
+  padding: 4px 0;
+}
+.textgrey {
+  color: grey;
+  padding: 4px 0;
+  font-family: emoji;
+}
+.card-exigence {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "case-exigence__case1 case-exigence__case2 case-exigence__case3 case-exigence__case4";
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.card-exigence__btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn_restau {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  height: 45px;
+  width: 90%;
+  opacity: 1;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.btn_restau .btn_restauspan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+.btn_restau:hover {
+  animation: btn_restaurotate 0.7s ease-in-out both;
+}
+.btn_restau:hover .btn_restauspan {
+  animation: btn_restaustorm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+@keyframes btn_restaurotate {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate(0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate(0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+@keyframes btn_restaustorm {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  75% {
+    transform: translate(2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.card-exigence img {
+  width: 100%;
+}
+
+.case-exigence__case1 {
+  grid-area: case-exigence__case1;
+}
+
+.case-exigence__case2 {
+  grid-area: case-exigence__case2;
+}
+
+.case-exigence__case3 {
+  grid-area: case-exigence__case3;
+}
+
+.case-exigence__case4 {
+  grid-area: case-exigence__case4;
+}
+
+
+.tool-suggestions{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  padding: 32px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin: 32px;
+}
+
+.tool-suggestions fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  border: none;
+  border-radius: 6px 22px;
+}
+
+
+/* The container */
+.container_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Responsive */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu_promotions {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-exigence {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .header-restaurant {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */
+
+.allergene{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.allergene__text {
+  margin-left: 10px;
+}
+.allergene p {
+  margin: 0;
+}
+.allergene a {
+  color: #00B8A9;
+}
+.allergene img {
+  width: 32px;
+}
+.header-restaurant {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border: 1px solid #F1F1F1;
+    font-size: 14px;
+}
+.header-restaurant h1 {
+  margin: 0;
+}
+.header-restaurant aside {
+  border: 1px solid #F1F1F1;
+}
+.header-restaurant aside img {
+  width: 300px;
+  height: auto;
+}
+.header-restaurant aside p {
+  text-align: center;
+  font-family: cursive;
+}
+.header-restaurant__title {
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 36px;
+}
+.header-restaurant__notation {
+  color: #00D006;
+  font-size: 16px;
+}
